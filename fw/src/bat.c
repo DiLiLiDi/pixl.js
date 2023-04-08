@@ -28,7 +28,7 @@
 
 //3.0 2.8  2.6  2.4  2.2 2.1 2.0 1.9 1.8 1.7
 //const uint32_t adc_map[] = { 853, 796, 739, 682, 625, 597, 569, 541, 512, 484}
-const uint32_t adc_map[] = { 484, 512, 541, 569, 597, 625, 682, 739, 796, 853};
+const uint32_t adc_map[] = { 968, 1021, 1074, 1127, 1180, 1233, 1286, 1339, 1392, 1445 };
 
 void saadc_callback(nrf_drv_saadc_evt_t const *p_event) {
 	NRF_LOG_INFO("ADC event: %d", p_event->type);
@@ -70,6 +70,6 @@ uint8_t bat_get_level(void) {
 		}
 	}
 
-	return 0;
+	return 10;
 }
 
