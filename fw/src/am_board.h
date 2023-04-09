@@ -33,9 +33,9 @@ extern "C" {
 #define BUTTONS_NUMBER 3
 
 #define BUTTON_START   5
-#define BUTTON_1       5
+#define BUTTON_3       5
 #define BUTTON_2       6
-#define BUTTON_3       7
+#define BUTTON_1       7
 #define BUTTON_STOP    7
 #define BUTTON_PULL    NRF_GPIO_PIN_PULLUP
 
