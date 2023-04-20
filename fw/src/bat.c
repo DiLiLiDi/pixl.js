@@ -28,7 +28,9 @@
 
 //3.0 2.8  2.6  2.4  2.2 2.1 2.0 1.9 1.8 1.7
 //const uint32_t adc_map[] = { 853, 796, 739, 682, 625, 597, 569, 541, 512, 484}
-const uint32_t adc_map[] = { 484, 512, 541, 569, 597, 625, 682, 739, 796, 853};
+//const uint32_t adc_map[] = { 484, 512, 541, 569, 597, 625, 682, 739, 796, 853};
+//2.1 2.0 1.95 1.9 1.85 1.8 1.75 1.7 1.6 1.5
+const uint32_t adc_map[] = {429, 457, 485, 499, 513, 527, 541, 555, 569, 597};
 
 void saadc_callback(nrf_drv_saadc_evt_t const *p_event) {
 	NRF_LOG_INFO("ADC event: %d", p_event->type);
